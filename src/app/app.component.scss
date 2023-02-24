@@ -1,0 +1,25 @@
+@import "../styles.scss";
+
+nav{
+    padding-inline: 10vw;
+    height: 8vh;
+    background-color: $grape;
+    color: $ivory;
+    
+}
+.active{
+    text-decoration: wavy;
+}
+
+.page{
+    min-height: 72vh;
+    background-color: $ivory;
+}
+
+footer{
+    background-color: $grape;
+    color: $ivory;
+    height: 20vh;
+    padding-inline: 10vw;
+    padding-block: 5vh;
+}

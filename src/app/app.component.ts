@@ -8,15 +8,7 @@ import { GetdataService } from './services/getdata.service';
 })
 export class AppComponent {
   title = 'whichJournal';
-  myData: any;
-  myData$: any; //esto es la lista observable entera
-  constructor(private getdataService: GetdataService) {}
 
-  ngOnInit(): void {
-    this.getdataService
-    .getData()
-    .subscribe((data) => {
-      this.myData = data;
-    });
-  }
+  constructor() {}
+
 }
