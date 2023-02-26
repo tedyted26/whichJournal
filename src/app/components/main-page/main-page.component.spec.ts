@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { IntroComponent } from '../intro/intro.component';
 import { MainPageComponent } from './main-page.component';
+import { ResultsComponent } from '../results/results.component';
 
 describe('MainPageComponent', () => {
   let component: MainPageComponent;
@@ -8,7 +9,7 @@ describe('MainPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MainPageComponent ]
+      declarations: [ MainPageComponent , IntroComponent, ResultsComponent]
     })
     .compileComponents();
 
