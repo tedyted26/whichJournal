@@ -1,0 +1,41 @@
+@import "../../../styles.scss";
+
+.fondo{
+    padding-inline:10vw;
+    padding-block: 10vh;
+    background-color: $white;
+    
+}
+h1{
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: $persian-indigo;
+}
+h2{
+    font-size: 1.7rem;
+}
+input:focus, textarea:focus, button:focus {
+    border-color: rgba(64, 28, 132, 0.3);
+    box-shadow: 0 0 0 0.2rem rgba(64, 28, 132, 0.3);
+  }
+
+.form-check-input:checked {
+    background-color: $grape;
+    border-color: $grape;
+}
+.form-container{
+    background-color: $light-blue;
+    width: 70vw;
+    padding:5%;
+    border-radius: 1rem;
+    margin-inline: auto;
+}
+.form-check-input{
+    margin-right: 1rem;
+}
+.btn-primary{
+    background-color: $grape;
+    font-family: 'Cinzel', serif;
+    border: 0;
+    --bs-btn-active-bg: $persian-indigo;
+}

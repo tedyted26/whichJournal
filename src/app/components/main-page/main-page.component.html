@@ -1,4 +1,38 @@
 <div class="fondo">
+  <h1 class="text-center pb-5">A journal and conference finder for new researchers</h1>
+  <p>Are you new to the world of research papers and investigation? Do you feel lost when trying to search for a place to publish? Do you wish to share your work but don't know when or where? This is your place. In WhichJournal we strive to make your life easier and less stressful during this new stage of </p>
+<div class="form-container">
+
+
+<form class="text-center">
+  <h2 class="pb-2">What are you searching for?</h2>
+  <div class="row my-4 justify-content-center">
+  <div class="col-md-4 d-flex justify-content-center form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Journals
+    </label>
+  </div>
+  <div class="col-md-4 d-flex justify-content-center form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+      Conferences
+    </label>
+  </div>
+</div>
+    <input type="title" id="titleInput" class="form-control mb-4" placeholder="Title of your article">
+    
+    <input type="keywords" id="keywordsInput" class="form-control mb-4" placeholder="Keywords (optional)">
+    
+    <textarea class="form-control rounded-1" id="abstractInput" rows="9" placeholder="Abstract"></textarea>
+     
+    <button class="btn btn-primary mt-5" type="submit">Search</button>
+  </form>
+</div>
+
+
+
+
     <h2>Datos de backend:</h2>
     {{ myData | json}}
 </div>

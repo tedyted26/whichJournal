@@ -1,5 +1,8 @@
 @import "../styles.scss";
 
+*{
+    font-family: 'Lora', serif;
+}
 nav{
     padding-inline: 10vw;
     height: 8vh;
@@ -11,6 +14,11 @@ nav{
 } 
 .logo{
     height: 4vh;
+    
+}
+
+.container-fluid{
+   padding-inline: calc(var(--bs-gutter-x) * -0.5);
 }
 
 .nav-link.active{
@@ -21,7 +29,7 @@ nav{
 
 .page{
     min-height: 72vh;
-    background-color: $ivory;
+    background-color: $white;
 }
 
 footer{
