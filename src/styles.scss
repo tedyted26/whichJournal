@@ -47,3 +47,12 @@ $gradient-top-left: linear-gradient(225deg, #FFFFFFff, #FFFFEFff, #E7FF07ff, #B4
 $gradient-bottom-left: linear-gradient(315deg, #FFFFFFff, #FFFFEFff, #E7FF07ff, #B400FFff, #6F1EBAff, #401C84ff, #220070ff, #01002Dff);
 $gradient-radial: radial-gradient(#FFFFFFff, #FFFFEFff, #E7FF07ff, #B400FFff, #6F1EBAff, #401C84ff, #220070ff, #01002Dff);
 
+.btn-primary{
+    background-color: $grape;
+    font-family: 'Cinzel', serif;
+    border: 0;
+    --bs-btn-active-bg: $persian-indigo;
+}
+html {
+    scroll-behavior: smooth;
+   }

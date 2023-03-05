@@ -5,3 +5,52 @@ h1{
     font-size: 2rem;
     color: $persian-indigo;
 }
+h2{
+    //font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: $persian-indigo;
+}
+p{
+    margin: 0;
+}
+.container-fluid{
+    background-color: $lila;
+    padding-inline: 18vw;
+    padding-block: 6vh;
+    max-height: max-content;
+    min-height: 92vh;
+    
+}
+.text{
+    display: inline-block;
+    margin-bottom: 3rem;    
+}
+.circle{
+    border-radius: 50%;
+    border: outset $lila-dark 5px;
+    height: 6rem;
+    width: 6rem;
+    background-size: cover;
+    background-position: 52%, 50%;
+    margin-inline: auto;
+   
+}
+.intro{
+    margin-inline: -5rem;
+}
+
+.row{
+    margin-block: 1rem;
+    justify-content: space-between;
+}
+.row-text{
+    margin-inline: auto;
+    text-align:center;
+}
+
+.btn{
+    margin-inline: auto;
+    display: flex;
+    margin-top: 1rem;
+}
+

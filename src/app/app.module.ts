@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IntroComponent } from './components/intro/intro.component';
 import { JournalCardComponent } from './components/journal-card/journal-card.component';
 import { ResultsComponent } from './components/results/results.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ResultsComponent } from './components/results/results.component';
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxPageScrollCoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
