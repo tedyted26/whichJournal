@@ -12,6 +12,7 @@ import { IntroComponent } from './components/intro/intro.component';
 import { JournalCardComponent } from './components/journal-card/journal-card.component';
 import { ResultsComponent } from './components/results/results.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { ConferenceCardComponent } from './components/conference-card/conference-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     AboutComponent,
     IntroComponent,
     JournalCardComponent,
-    ResultsComponent
+    ResultsComponent,
+    ConferenceCardComponent
   ],
   imports: [
     BrowserModule,

@@ -7,14 +7,14 @@ $white: #FFFFFFff;
 $ivory: #FFFFEFff;
 $yellow: #F8E883;
 $lemon-lime: #E7FF07ff;
-$lila: #BD96E4;
+$lila: #c0a0dfba;
 $lila-dark: #9D66D6;
 $electric-purple: #B400FFff;
 $grape: #6F1EBAff;
 $persian-indigo: #401C84ff;
-$light-blue: #717ED4;
+$light-blue: #97a2e9;
 $navy-blue: #220070ff;
-$oxford-blue: #01002Dff;
+$oxford-blue: #003e5e;
 
 /* SCSS HSL */
 $white: hsla(0, 0%, 100%, 1);
@@ -24,7 +24,7 @@ $electric-purple: hsla(282, 100%, 50%, 1);
 $grape: hsla(271, 72%, 42%, 1);
 $persian-indigo: hsla(261, 65%, 31%, 1);
 $navy-blue: hsla(258, 100%, 22%, 1);
-$oxford-blue: hsla(241, 100%, 9%, 1);
+//$oxford-blue: hsla(241, 100%, 9%, 1);
 
 /* SCSS RGB */
 $white: rgba(255, 255, 255, 1);
@@ -34,7 +34,7 @@ $electric-purple: rgba(180, 0, 255, 1);
 $grape: rgba(111, 30, 186, 1);
 $persian-indigo: rgba(64, 28, 132, 1);
 $navy-blue: rgba(34, 0, 112, 1);
-$oxford-blue: rgba(1, 0, 45, 1);
+//$oxford-blue: rgba(1, 0, 45, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #FFFFFFff, #FFFFEFff, #E7FF07ff, #B400FFff, #6F1EBAff, #401C84ff, #220070ff, #01002Dff);
@@ -55,4 +55,5 @@ $gradient-radial: radial-gradient(#FFFFFFff, #FFFFEFff, #E7FF07ff, #B400FFff, #6
 }
 html {
     scroll-behavior: smooth;
+    
    }

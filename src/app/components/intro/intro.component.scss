@@ -12,13 +12,13 @@ h2{
 }
 p{
     margin: 0;
+    font-size: 0.9rem;
 }
 .container-fluid{
-    background-color: $lila;
-    padding-inline: 18vw;
+    
+    padding-inline: 10vw;
     padding-block: 6vh;
     max-height: max-content;
-    min-height: 92vh;
     
 }
 .text{
@@ -51,6 +51,6 @@ p{
 .btn{
     margin-inline: auto;
     display: flex;
-    margin-top: 1rem;
+    margin-top: 4%;
 }
 

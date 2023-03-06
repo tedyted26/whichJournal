@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Journal } from 'src/app/models/journal.model';
 
 @Component({
   selector: 'app-journal-card',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./journal-card.component.scss']
 })
 export class JournalCardComponent {
+imagePath: String = "assets/book.jpg";
+
+@Input()
+journal: Journal = new Journal("", "", "", "", "", "", "", "", "", "", "", "");
 
 }

@@ -1,1 +1,58 @@
-<p>journal-card works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-3">
+            <div class="foto" *ngIf="journal.imagePath != null || journal.imagePath != ''" [ngStyle]="{'background-image': 'url(' + imagePath + ')'}"></div>
+        </div>
+        <div class="col-md-10 col-sm-9">
+            <div class="row general-info">
+                <div class="col-md-4 col-sm-8">
+                    <h3>Title</h3>
+                    <h4>aaa</h4>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h3>SSN</h3>
+                    <h4>aaa</h4>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h3>Release year</h3>
+                    <h4>aaa</h4>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h3>Type</h3>
+                    <h4>aaa</h4>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h3>Price for publication</h3>
+                    <h4>aaa</h4>
+                </div>
+            </div>
+            <div class="row metrics">
+                <div class="col-md-2 col-sm-4">
+                    <h3>Impact factor</h3>
+                    <h4>aaa</h4>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h3>Quartil</h3>
+                    <h4>aaa</h4>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h3>Other metrics </h3> <!--(Citescore)-->
+                    <h4>aaa</h4>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h3>Acceptance rate</h3>
+                    <h4>aaa</h4>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h3>Time to 1st decision</h3>
+                    <h4>aaa</h4>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h3>Time to publication</h3>
+                    <h4>aaa</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

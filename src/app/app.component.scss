@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Lora', serif;
+
 }
 nav{
     padding-inline: 10vw;
@@ -26,16 +27,21 @@ nav{
     padding-bottom: 0; 
     border-bottom: 2px solid $yellow;
 }
-
 .page{
     min-height: 72vh;
-    background-color: $white;
+    background-color: $lila;
 }
-
 footer{
     background-color: $grape;
     color: $ivory;
     height: 20vh;
     padding-inline: 10vw;
     padding-block: 5vh;
+    a{
+        color: white;
+        font-size: 0.8rem;
+    }
+    p{
+        margin-bottom: 0;
+    }
 }
