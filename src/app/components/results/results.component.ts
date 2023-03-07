@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Data } from '@angular/router';
+import { Conference } from 'src/app/models/conference.model';
+import { Journal } from 'src/app/models/journal.model';
 import { GetdataService } from 'src/app/services/getdata.service';
 
 @Component({
@@ -7,15 +10,15 @@ import { GetdataService } from 'src/app/services/getdata.service';
   styleUrls: ['./results.component.scss']
 })
 export class ResultsComponent {
-  myData: any;
-  myData$: any; //esto es la lista observable entera
-  constructor(private getdataService: GetdataService) {}
+  journals_list: Journal[] = [];
+  conference_list: Conference[] = [];
+
+  @Input()
+  search_data: any = "";
+
+  myData: any = "";
+  constructor() {}
 
   ngOnInit(): void {
-    this.getdataService
-    .getData()
-    .subscribe((data) => {
-      this.myData = data;
-    });
   }
 }
