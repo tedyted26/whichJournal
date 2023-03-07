@@ -12,19 +12,6 @@
     min-height: 3rem;
     padding-block: 0.5rem;
 }
-.foto{   
-    min-width: 3rem;
-    max-height: 9rem;
-    max-width: 5rem;
-    min-height: 7rem;
-    background-size: cover;
-    background-position: 50% 50%;
-    box-shadow: 0 0 5px 1.5px #cfc2de;
-    margin-inline: auto;
-    margin-bottom: 0.2rem;
-    border-radius: 0.2rem;
-    
-}
 h3{
     color: #a08ab9;
     font-size: 0.8rem;
@@ -32,5 +19,9 @@ h3{
 }
 h4{
     color: $oxford-blue;
-    font-size: 1rem;
+    font-size: 0.9rem;
+}
+.general-info{
+    min-height: 3rem;
+    padding-block: 0.5rem;
 }

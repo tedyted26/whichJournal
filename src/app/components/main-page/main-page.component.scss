@@ -2,7 +2,7 @@
 
 
 .container{
-    margin-top:1rem;
+    padding-block:10vh;
 }
 h2{
     font-size: 1.7rem;
@@ -18,7 +18,7 @@ input:focus, textarea:focus, button:focus {
 }
 .form-container{
     background-color: $light-blue;
-    width: 70vw;
+    width: 80%;
     padding-inline:5%;
     padding-block: 3%;
     border-radius: 0.5rem;

@@ -1,7 +1,9 @@
-<div class="results-container">
-    <h2 class="text-center">Your results: </h2>
-    <app-journal-card></app-journal-card>
-    <app-conference-card></app-conference-card>
+<div class="results-container" *ngIf=" search_data!=''">
+    <h2 class="text-center" id="your_results">Your results: </h2>
+    <div  id="list">
+    <div *ngFor="let item of search_data">
+    <app-journal-card  *ngIf="item.title != null && item.titulo == null" [journal]="item"></app-journal-card> 
+    <app-conference-card  *ngIf="item.title == null && item.titulo != null" [conference]="item"></app-conference-card>
 </div>
-
-{{ myData | json}}
+</div>
+</div>

@@ -1,51 +1,45 @@
 <div class="container-fluid">
 
-    <div class="row">
+    <div class="row general-info">
         <div class="col-md-4 col-sm-8">
             <h3>Title</h3>
-            <h4>aaa</h4>
-        </div>
-        <div class="col-md-1 col-sm-4">
-            <h3>Date</h3>
-            <h4>aaa</h4>
-        </div>
-        <div class="col-md-1 col-sm-4">
-            <h3>Country</h3>
-            <h4>aaa</h4>
-        </div>
-        <div class="col-md-1 col-sm-4">
-            <h3>City</h3>
-            <h4>aaa</h4>
-        </div>
-        <div class="col-md-1 col-sm-4">
-            <h3>Type</h3>
-            <h4>aaa</h4>
+            <h4>{{conference.titulo}}</h4>
         </div>
         <div class="col-md-2 col-sm-4">
-            <h3>Inscription due date</h3>
-            <h4>aaa</h4>
+            <h3>Date</h3>
+            <h4>{{conference.fecha}}</h4>
         </div>
+        <div class="col-md-2 col-sm-4">
+            <h3>Country</h3>
+            <h4>{{conference.pais}}</h4>
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <h3>City</h3>
+            <h4>{{conference.ciudad}}</h4>
+        </div> 
         <div class="col-md-2 col-sm-4">
             <h3>Price</h3>
-            <h4>aaa</h4>
+            <h4>{{conference.precio}}</h4>
         </div>
+        
+       
     </div>
     <div class="row">
-        <div class="col-md-6 col-sm-12">
-            <h3>Description</h3>
-            <h4>aaa</h4>
+        <div class="col-md-4 col-sm-12">
+            <h3>Tags</h3>
+            <h4>{{conference.tags}}</h4>
         </div>
-        <div class="col-md-6 col-sm-12">
-            <div class="row">
-                <div class="col-md-8 col-sm-12">
-                    <h3>Tags</h3>
-                    <h4>aaa</h4>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <h3>Organization</h3>
-                    <h4>aaa</h4>
-                </div>              
-            </div>
+        <div class="col-md-4 col-sm-12">
+            <h3>Organization</h3>
+            <h4>{{conference.organizacion}}</h4>
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <h3>Last Inscription</h3>
+            <h4>{{conference.fechaInscripcion}}</h4>
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <h3>Type</h3>
+            <h4>{{conference.tipo}}</h4>
         </div>
     </div>
 </div>

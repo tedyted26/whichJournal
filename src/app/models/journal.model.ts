@@ -1,6 +1,6 @@
 export class Journal {
 public imagePath: String;
-public titulo: String;
+public title: String;
 public ssn: String;
 public releaseYear: String;
 public type: String;
@@ -12,10 +12,10 @@ public acceptanceRate: String;
 public timeDecision: String;
 public timePublication: String;
 
-constructor(imagePath: String, titulo: String, ssn: String, releaseYear: String, type: String, price: String, impactFactor: String, quartil: String, 
+constructor(imagePath: String, title: String, ssn: String, releaseYear: String, type: String, price: String, impactFactor: String, quartil: String, 
     otherMetrics: String, acceptanceRate: String, timeDecision: String, timePublication: String ){
         this.imagePath = imagePath;
-        this.titulo = titulo;
+        this.title = title;
         this.ssn = ssn;
         this.releaseYear = releaseYear;
         this.type = type;

@@ -13,6 +13,7 @@ import { JournalCardComponent } from './components/journal-card/journal-card.com
 import { ResultsComponent } from './components/results/results.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { ConferenceCardComponent } from './components/conference-card/conference-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ConferenceCardComponent } from './components/conference-card/conference
     HttpClientModule,
     NgbModule,
     BrowserAnimationsModule,
-    NgxPageScrollCoreModule
+    NgxPageScrollCoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
