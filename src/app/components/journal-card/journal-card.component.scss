@@ -1,10 +1,10 @@
 @import "../../../styles.scss";
 
 .container-fluid{
-    padding: 1.5rem;
+    
     background-color: $white;
     border-radius: 0.5rem;
-    margin-block: 1rem;
+    margin-block: 0.5rem;
     max-width: 90%;
     box-shadow: 0 0 5px 1.5px #a683d1;
 }
@@ -12,25 +12,96 @@
     min-height: 3rem;
     padding-block: 0.5rem;
 }
-.foto{   
-    min-width: 3rem;
-    max-height: 9rem;
-    max-width: 5rem;
-    min-height: 7rem;
+.foto{ 
+    height: 9rem;
+    width: 6rem;  
     background-size: cover;
     background-position: 50% 50%;
     box-shadow: 0 0 5px 1.5px #cfc2de;
-    margin-inline: auto;
-    margin-bottom: 0.2rem;
+    margin-inline: 2%;
     border-radius: 0.2rem;
     
 }
-h3{
-    color: #a08ab9;
-    font-size: 0.8rem;
+h2{
+    font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+    color: $oxford-blue;
 }
 h4{
-    color: $oxford-blue;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+    color: black;
+}
+
+.quartil{
+    color: white;
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        text-align: center;
+        color: white;
+
+    }
+    h4{
+        text-align: center;
+        color: white;
+    }
+    background-color: $grape;
+    border-top-right-radius: 0.5rem;  
+    border-bottom-right-radius: 0.5rem;
+    padding-block: auto; 
+}
+.padding-y{
+    padding-block: 1rem;
+}
+.info{
+    padding-block: 1rem;
+}
+
+@media (max-width: 768px) {
+    .quartil {
+        border-top-right-radius: 0;  
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0.5rem;  
+        border-bottom-right-radius: 0.5rem;
+    }
+    .padding-y{
+        padding-bottom: 1rem;
+        padding-top: 0;
+    }
+    .other-metrics{
+        padding-bottom: 0;
+    }
+    .info{
+        padding-bottom: 0.5rem;
+    }   
+  }
+
+.issn{
+    font-size: 0.85rem;
+    margin-top: 0;
+    
+}
+.title{
+    text-overflow: ellipsis;
+}
+.predator{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 2%;
+}
+.other-metrics{
+    
+    min-height: 1rem;
+    padding-top: 0.5rem;
+    h2{
+        font-size: 1rem;
+    }
 }

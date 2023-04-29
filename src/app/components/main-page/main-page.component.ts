@@ -11,6 +11,15 @@ import { GetdataService } from 'src/app/services/getdata.service';
 export class MainPageComponent {
   title = 'whichJournal';
   search_data: any ="";
+  check_j: boolean = true;
+  check_c: boolean = false;
+  title_j: string = "";
+  keywords: string = "";
+  abstract: string = "";
+
+  input_error = false;
+  error_name = "";
+
 
 //esto es la lista observable entera
   constructor(private pageScrollService: PageScrollService, @Inject(DOCUMENT) private document: any, private getdataService: GetdataService) {}
@@ -21,14 +30,30 @@ export class MainPageComponent {
   })
 }
 
-  send_data(value: string){
-    
-    this.getdataService
-    .getData(value)
-    .subscribe((data) => {
-      this.search_data = data;
-      console.log(data);
-    });   
+  send_data(){
+    // if (this.check_j == false && this.check_c == false){
+    //   this.input_error = true;
+    //   this.error_name = "Don't leave boxes unchecked!";
+    // }
+    // else if (this.title_j == "" && this.abstract == ""){
+    //   this.input_error = true;
+    //   this.error_name = "Title or abstract missing";
+    // }
+    // else {
+    //   this.input_error = false;
+    //   this.error_name = "";
+    // }
+
+    if (this.input_error == false){
+      var data_to_send = {check_j: this.check_j, check_c: this.check_c, title_j: this.title_j, keywords: this.keywords, abstract: this.abstract};
+
+      this.getdataService
+      .getData(data_to_send)
+      .subscribe((data) => {
+        this.search_data = data;
+        console.log(data);
+      });
+    }  
   }
   
 

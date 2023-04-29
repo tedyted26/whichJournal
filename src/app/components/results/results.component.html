@@ -1,9 +1,26 @@
 <div class="results-container" *ngIf=" search_data!=''">
     <h2 class="text-center" id="your_results">Your results: </h2>
-    <div  id="list">
-    <div *ngFor="let item of search_data">
-    <app-journal-card  *ngIf="item.title != null && item.titulo == null" [journal]="item"></app-journal-card> 
-    <app-conference-card  *ngIf="item.title == null && item.titulo != null" [conference]="item"></app-conference-card>
-</div>
-</div>
-</div>
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" [ngClass]="{'disabled': isJournals==false}" href="#" data-bs-toggle="tab" data-bs-target="#journals">Journals</a>         
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" [ngClass]="{'disabled': isConferences==false, 'active': isJournals==false}" href="#" data-bs-toggle="tab" data-bs-target="#conferences">Conferences</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="journals" role="tabpanel" aria-labelledby="journals-tab">
+        <div id="journal-list" class="list">
+          <div *ngFor="let item of search_data">
+            <app-journal-card *ngIf="(item.imagePath == null) ? false : true" [journal]="item"></app-journal-card> 
+          </div>
+        </div>
+    
+    <div class="tab-pane fade" id="conferences" role="tabpanel" aria-labelledby="conferences-tab">
+      <div id="conference-list" class="list">
+        <div *ngFor="let item of search_data">
+          <app-conference-card *ngIf="(item.imagePath == null) ? true : false" [conference]="item"></app-conference-card>
+        </div>
+      </div>
+    </div>   
+  </div>

@@ -10,6 +10,6 @@ export class JournalCardComponent {
 imagePath: String = "assets/book.jpg";
 
 @Input()
-journal: Journal = new Journal("", "", "", "", "", "", "", "", "", "", "", "");
+journal: Journal = new Journal("", "", "", "", "", "", "", "", "", "", "", "","","","","");
 
 }

@@ -8,8 +8,8 @@ export class GetdataService {
 
   constructor(private http: HttpClient) { }
 
-  getData(param: string){
+  getData(formData:any){
     
-    return this.http.post('http://127.0.0.1:5000/get_results', param);
+    return this.http.post('http://127.0.0.1:5000/get_test', formData);
   }
 }
