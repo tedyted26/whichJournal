@@ -31,4 +31,4 @@
     </form>
   </div>
 </div>
-<app-results [search_data]="search_data" [isConferences]="check_c" [isJournals]="check_j"></app-results>
+<app-results *ngIf="search_data" [search_data]="search_data" [isJournals]="isJournals" [isConferences]="isConferences"></app-results>

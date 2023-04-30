@@ -1,45 +1,44 @@
 <div class="container-fluid">
+    <a href="{{conference.url}}">
+    <div class="row justify-content-center general-info">
+        <div class="col-md-2 col-sm-2 d-flex justify-content-center align-items-center">
+            <div class="image-container text-center">
+                <img class="foto" *ngIf="conference.type=='In-person'" src="assets/conference.png">
+                <img class="foto" *ngIf="conference.type=='Virtual'" src="assets/virtual_conference.png">
+                <img class="foto" *ngIf="conference.type!='Virtual' && conference.type!='In-person'"
+                    src="assets/help.png">
+                <h3>{{conference.type}}</h3>
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-10">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h2 class="title">{{conference.title}}</h2>
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="col-md-4 col-sm-4">
+                    <h3>Dates</h3>
+                    <h4>{{conference.date}}</h4>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h3>Location</h3>
+                    <h4>{{conference.location}}</h4>
+                </div>
+                <div class="col-md-4 col-sm-4 align-items-end">
+                    <h3>Last Inscription</h3>
+                    <h4>{{conference.dueDate}}</h4>
+                </div>
 
-    <div class="row general-info">
-        <div class="col-md-4 col-sm-8">
-            <h3>Title</h3>
-            <h4>{{conference.titulo}}</h4>
-        </div>
-        <div class="col-md-2 col-sm-4">
-            <h3>Date</h3>
-            <h4>{{conference.fecha}}</h4>
-        </div>
-        <div class="col-md-2 col-sm-4">
-            <h3>Country</h3>
-            <h4>{{conference.pais}}</h4>
-        </div>
-        <div class="col-md-2 col-sm-4">
-            <h3>City</h3>
-            <h4>{{conference.ciudad}}</h4>
-        </div> 
-        <div class="col-md-2 col-sm-4">
-            <h3>Price</h3>
-            <h4>{{conference.precio}}</h4>
-        </div>
-        
-       
-    </div>
-    <div class="row">
-        <div class="col-md-4 col-sm-12">
-            <h3>Tags</h3>
-            <h4>{{conference.tags}}</h4>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <h3>Organization</h3>
-            <h4>{{conference.organizacion}}</h4>
-        </div>
-        <div class="col-md-2 col-sm-4">
-            <h3>Last Inscription</h3>
-            <h4>{{conference.fechaInscripcion}}</h4>
-        </div>
-        <div class="col-md-2 col-sm-4">
-            <h3>Type</h3>
-            <h4>{{conference.tipo}}</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="d-inline">Categories: </h3><h4 class="d-inline">{{conference.tags}}</h4>
+                    
+                </div>
+            </div>
         </div>
     </div>
+</a>
+
 </div>

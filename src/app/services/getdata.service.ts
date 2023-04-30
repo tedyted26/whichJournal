@@ -10,6 +10,6 @@ export class GetdataService {
 
   getData(formData:any){
     
-    return this.http.post('http://127.0.0.1:5000/get_test', formData);
+    return this.http.post('http://127.0.0.1:5000/get_results', formData);
   }
 }

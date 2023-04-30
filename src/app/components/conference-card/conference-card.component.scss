@@ -1,27 +1,53 @@
 @import "../../../styles.scss";
 
 .container-fluid{
-    padding: 1.5rem;
+    
     background-color: $white;
     border-radius: 0.5rem;
-    margin-block: 1rem;
+    margin-block: 0.5rem;
     max-width: 90%;
     box-shadow: 0 0 5px 1.5px #a683d1;
 }
 .general-info{
     min-height: 3rem;
-    padding-block: 0.5rem;
+    padding-block: 1.5rem;
 }
-h3{
-    color: #a08ab9;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-h4{
-    color: $oxford-blue;
-    font-size: 0.9rem;
+.foto{ 
+    height: 5rem;
+    width: 5rem;  
+    background-size: cover;
+    background-position: 50% 50%;
+    box-shadow: 0 0 5px 1.5px #cfc2de;
+    margin-inline: 2%;
+    border-radius: 50%;
+    
 }
 .general-info{
     min-height: 3rem;
-    padding-block: 0.5rem;
+    padding-block: 1rem;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+}
+h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+    color: $oxford-blue;
+}
+h4{
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+    color: black;
+}
+
+.title{
+    text-overflow: ellipsis;
+}
+

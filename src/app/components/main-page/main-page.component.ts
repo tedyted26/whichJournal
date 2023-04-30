@@ -19,6 +19,8 @@ export class MainPageComponent {
 
   input_error = false;
   error_name = "";
+  isJournals = false;
+  isConferences = false;
 
 
 //esto es la lista observable entera
@@ -31,21 +33,23 @@ export class MainPageComponent {
 }
 
   send_data(){
-    // if (this.check_j == false && this.check_c == false){
-    //   this.input_error = true;
-    //   this.error_name = "Don't leave boxes unchecked!";
-    // }
-    // else if (this.title_j == "" && this.abstract == ""){
-    //   this.input_error = true;
-    //   this.error_name = "Title or abstract missing";
-    // }
-    // else {
-    //   this.input_error = false;
-    //   this.error_name = "";
-    // }
+    if (this.check_j == false && this.check_c == false){
+      this.input_error = true;
+      this.error_name = "Don't leave boxes unchecked!";
+    }
+    else if (this.title_j == "" && this.abstract == ""){
+      this.input_error = true;
+      this.error_name = "Title or abstract missing";
+    }
+    else {
+      this.input_error = false;
+      this.error_name = "";
+    }
 
     if (this.input_error == false){
       var data_to_send = {check_j: this.check_j, check_c: this.check_c, title_j: this.title_j, keywords: this.keywords, abstract: this.abstract};
+      this.isJournals = this.check_j;
+      this.isConferences = this.check_c;
 
       this.getdataService
       .getData(data_to_send)
@@ -53,7 +57,7 @@ export class MainPageComponent {
         this.search_data = data;
         console.log(data);
       });
-    }  
+    } 
   }
   
 

@@ -9,7 +9,7 @@ import { Conference } from 'src/app/models/conference.model';
 export class ConferenceCardComponent {
 
   @Input()
-  conference: Conference = new Conference("", "", "", "", "", "", "", "", "");
+  conference: Conference = new Conference("", "", "", "", "", "", "", "");
   
   
   
