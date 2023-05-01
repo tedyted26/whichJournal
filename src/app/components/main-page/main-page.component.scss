@@ -31,5 +31,33 @@ input:focus, textarea:focus, button:focus {
 }
 .error{
     color: rgb(220, 38, 38);
-    
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.file-container{
+    margin-top: 2%;
+}
+ngx-dropzone{
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    text-overflow: ellipsis;
+}
+.preview{
+    min-width: none;
+    width: 4.8rem;
+    min-height: 3rem;
+    height: 4.8rem;
+    max-height: 4.8rem;
+    justify-content: center;
+    align-items: center;
+    text-overflow: ellipsis;
+}
+ngx-dropzone-label{
+    text-overflow: ellipsis;
 }

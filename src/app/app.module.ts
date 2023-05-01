@@ -14,6 +14,7 @@ import { ResultsComponent } from './components/results/results.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { ConferenceCardComponent } from './components/conference-card/conference-card.component';
 import { FormsModule } from '@angular/forms';
+import { NgxDropzoneModule } from 'ngx-dropzone';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     NgbModule,
     BrowserAnimationsModule,
     NgxPageScrollCoreModule,
-    FormsModule
+    FormsModule,
+    NgxDropzoneModule
   ],
   providers: [],
   bootstrap: [AppComponent]

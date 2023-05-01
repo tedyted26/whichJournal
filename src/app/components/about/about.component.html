@@ -1,12 +1,14 @@
 <div class="container-fluid text-center">
     <div class="text">
         <h1 class="pb-3">About</h1>
-        <p>This system is created by a Computer Engineering student of Universidad Europea de Madrid as the Final Degree Project for 2023
-          ..., -mision -vision -valores</p>
+        <p>This system is created by a Computer Engineering student of Universidad Europea de Madrid as the Final Degree Project (2023).
+            Its main purpose is to aid new researchers in the search of potential journals or conferences in which they can share their
+            work and knowledge in a specific field. This is done using natural lenguage processing and 
+            trained IA models to recommend the best options (from our own databases, updated regularly) for publishing and sharing content: the only information needed is a piece of 
+            the same work that is going to be published (Don't worry! We don't save it). We also take care of detecting untrustworty
+            journals that only look for their own economic gain using information from Beall's list and journal rankings like SJR Scimago Journal & Country Rank.</p>
     </div>
     
-    
-    <button class="btn btn-primary" [routerLink]="['/about']" fragment="help">↓ HELP SECTION ↓</button>  
 </div>
 <div class="container" id="help">
     <h3 class="text-center">Need clarifications?</h3>
@@ -14,38 +16,144 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Faq 1
+              <strong>Publishing models. Open Access vs Subscription journals</strong>
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                Response 1
-            </div>
+              <p>
+                Traditionally, journals were subscription based, meaning that the autor could publish for free but the contents would be
+                locked behind a <strong>subscription fee</strong> for readers. Also, <strong>copyright of the article would be transfered to the publishing journal</strong>
+                and every action regarding that article should seek permision from the journal.
+              </p> 
+              <p>
+                Now, <strong>Open Access</strong> has gained popularity. Using this publishing model, autors pay an APC or <strong>Article Processing Charges</strong>
+                for publication and readers have the contents for free. This fee depends on the journal and some other factors. Author's copyright in this case is preserved, using 
+              <strong>Creative Commons Licenses</strong>.
+              </p> 
+              <p> 
+                There are different <strong>open access types</strong> such as <strong>"Gold OA"</strong>, <strong>"Green OA"</strong> and <strong>"Hybrid"</strong>. In <strong>Gold OA</strong> articles are made available online in the
+                journal's website with a CC license and paying an APC as described above. In <strong>Green OA</strong>, authors can upload their articles free 
+                of charge to <strong>online repositories</strong> or their own websites. Lastly, <strong>Hybrid</strong> models mix aspects from Subscription-based publishing and Open Access, 
+                making it possible for the authors to pay a publication fee only for specific articles while maintaining a Subscription-based model for the rest of them. 
+              </p>
+              <p>  
+                For more info check: <span><a href="https://en.wikipedia.org/wiki/Open_access">Open Access</a></span>
+              </p>
+            </div> 
           </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Faq 2
+                <strong>Bibliometric indicators: Impact factor, CiteScore...</strong>
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                Response 2
+                <p>
+                Bibliometric indicators are a group of metrics calculated using <strong>statistical methods</strong> with the purpose of analyzing publishing trends and information such as the citation impact of a given journal.
+              </p>
+              <p>
+              <strong>Impact factor</strong> is a popular metric calculated by <strong>Clarivate</strong> for journals in their <strong>Web of Science</strong> index that measures it's importance.
+                It takes in consideration the number of citations of the journal's articles in the previous 2 years. The higher the result, the more important a journal is.
+                Moreover, there is a variation of this impact factor called <strong>5-year Impact factor</strong>, that calculates the number of citation in the last 5 years.
+              </p>
+              <p>
+              <strong>CiteScore</strong> is another bibliometric indicator similar to Impact Factor. This metric is calculated using data from <strong>Scopus</strong> on a yearly basis,
+                and has more measured journals than Clarivate.
+              </p>
               </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Faq 3
+                <strong>Predatory Journals</strong>
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                Response 3 
+                <p>
+                 Journals that prioritize <strong>economic gain over quality</strong>, often missing necessary services or checks like peer review (review of
+                 the contents of a new article to publish by a group of proffesionals in the field). They also can try to get hold of the article's ownership.
+                In WhichJournal, we mark potential predatory journals with a <strong>wolf icon</strong>. It's important to notice that this icon serves as a mere warning, to
+                decide if the journal is actually predatory or not, is left to user's criteria and a few resources down below that help identify them:               
+              </p>
+              <ul>
+                <li>
+                  <a href="https://thinkchecksubmit.org/">Think Check Submit</a>
+                </li>
+                <li>
+                  <a href="https://beallslist.net/">Beall's list</a>
+                </li>
+                <li>
+                  <a href="https://tressacademic.com/identify-predatory-journals/?cookie-state-change=1679341727376">Predatory journals: How to identify them?</a>
+                </li>
+              </ul>             
               </div>
             </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <strong>About conferences</strong>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <strong>Scientific conferences</strong> or workshops are events in which researchers of a given field gather to discuss academic work. They have
+               benefits such as information exchange, feedback and visibility of one's research. 
+               They can be <strong>virtual</strong>, <strong>in-person</strong> or <strong>hybrid</strong>, and some requirements to participate are to submit an article of the given reseach area 
+               and pay the <strong>submission fees</strong>. Conditions may vary depending on the conference, the organization that holds it and the country it takes place.
+               
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <strong>Quartils and SJR Scimago Journal & Country Rank</strong>
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              Similar to Impact Factor, <strong>SJR Scimago Journal Rank</strong> is the average number of weighted citations in the 3 previous years of a determined journal. 
+            <strong>Quartils</strong>, on the other hand, are subdivisions of a category where the top 25% journals are <strong>Q1</strong>, top 25-50% are <strong>Q2</strong>, 50-75% <strong>Q3</strong>, and 75-100% are <strong>Q4</strong>.
+            WhichJournal uses the SJR ranking and quartils from Scimago's database for all possible journals (some of them are not in the database).
+            The best journals are the ones with higher SJR ranking and the ones that make up Q1 or Q2.
+            </p>
+            <a href="https://www.scimagojr.com/journalrank.php">Scimago</a>  
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          <strong>Other journal metrics: acceptance rate, review time...</strong>
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Other journal metrics shown in our recommendations are the acceptance rate, time to first decision, time to review, and time to publication:
+          <ul>
+            <li>
+              <strong>Acceptance Rate:</strong> Percentage of manuscripts that get accepted for publication.
+            </li>
+            <li>
+              <strong>Time to first decision:</strong> Time that passes from the submission of the manuscript to the first notice the author receives about acceptance.
+              If addmited, the manuscript goes for revision. 
+            </li>  
+            <li>
+              <strong>Time to review:</strong> Time that takes to review the accepted manuscript and decide to either accept or reject it.
+            </li>
+            <li>
+              <strong>Time to publication:</strong> Time that passes from being an accepted and reviewed manuscript to its first appearance as an online journal with a DOI code.
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
     </div>   
 </div>
