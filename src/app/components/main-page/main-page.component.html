@@ -41,4 +41,11 @@
     </form>
   </div>
 </div>
-<app-results *ngIf="search_data" [search_data]="search_data" [isJournals]="isJournals" [isConferences]="isConferences"></app-results>
+<div class="text-center pb-5" *ngIf="isLoading">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<div class="text-center pb-5" *ngIf="!isLoading && search_data == null">Sorry! No results found</div>
+<div class="text-center pb-5" *ngIf="isError">Ups! Something went wrong.</div>
+<app-results *ngIf="search_data && !isLoading" [search_data]="search_data" [isJournals]="isJournals" [isConferences]="isConferences"></app-results>

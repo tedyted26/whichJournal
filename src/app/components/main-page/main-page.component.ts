@@ -23,6 +23,8 @@ export class MainPageComponent {
   isJournals = false;
   isConferences = false;
   files: File[] = [];
+  isLoading = false;
+  isError = false;
 
 
 
@@ -36,6 +38,7 @@ export class MainPageComponent {
 }
 
   send_data(){
+    this.isError = false;
     if (this.check_j == false && this.check_c == false){
       this.input_error = true;
       this.error_name = "Don't leave boxes unchecked!";
@@ -50,6 +53,7 @@ export class MainPageComponent {
     }
 
     if (this.input_error == false){
+      this.isLoading = true;
       const formData = new FormData();
   
       if (this.files.length == 0){
@@ -65,10 +69,18 @@ export class MainPageComponent {
 
       this.getdataService
       .getData(formData)
-      .subscribe((data) => {
-        this.search_data = data;
-        console.log(data);
-      });
+      .subscribe({
+        next: (data) => {
+          
+          this.search_data = data;
+          console.log(data);
+          this.isLoading = false;
+        },
+        error: (error) => {
+          this.isLoading = false;
+          this.isError = true;
+        }
+      });     
     } 
   }
 

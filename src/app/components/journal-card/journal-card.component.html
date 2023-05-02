@@ -1,13 +1,14 @@
 <div class="container-fluid">
+    <a href="{{journal.url}}">
     <div class="row d-flex justify-content-center">
-
+        
         <div class="col-md-2 col-sm-3 py-3 justify-content-center d-flex align-content-center">
             <div class="row text-center">
-                <a href="{{journal.url}}">
+                
                     <img class="foto" *ngIf="journal.imagePath == null || journal.imagePath == ''" src="{{imagePath}}">
                     <img class="foto" *ngIf="journal.imagePath != null && journal.imagePath != ''"
                         src="{{journal.imagePath}}">
-                </a>
+                
             </div>
         </div>
 
@@ -67,6 +68,8 @@
             <h4 *ngIf='journal.sjr_ranking != "" '>{{journal.sjr_ranking}}</h4>
             <h4 *ngIf='journal.sjr_ranking == "" '>N/A</h4>          
         </div>
+    
     </div>
+</a>
 
 </div>
