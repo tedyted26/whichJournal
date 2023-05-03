@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <a href="{{journal.url}}">
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center" [ngClass]="{'border-predator-yes': journal.predator=='YES', 'border-predator-mdpi' : journal.predator=='MDPI'}">
         
         <div class="col-md-2 col-sm-3 py-3 justify-content-center d-flex align-content-center">
             <div class="row text-center">
@@ -17,7 +17,8 @@
                 <div class="row title">
                     <div class="col-md-12 d-flex">
                         <h2>{{journal.title}}</h2>
-                        <img title="Possibility of being a predator!" src="assets/lobo.png" class="predator" *ngIf="journal.predator == 'YES' || journal.predator == 'MDPI'">
+                        <img title="Possibility of being a predator!" src="assets/lobo.png" class="predator" *ngIf="journal.predator == 'MDPI'">
+                        <img title="Definetly a predator!" src="assets/lobo.png" class="predator" *ngIf="journal.predator == 'YES'">
                     </div>
                 </div>
                 <div class="row info">
@@ -63,7 +64,7 @@
             </div>
         </div>
         <div class="col-md-2 py-3 col-sm-12 quartil text-center justify-content-center">        
-            <h2 class="my-4"*ngIf='journal.quartil != "" && journal.quartil != "()"'>{{journal.quartil}}</h2>
+            <h2 class="my-4" *ngIf='journal.quartil != "" && journal.quartil != "()"'>{{journal.quartil}}</h2>
             <h3>SJR Ranking: </h3>
             <h4 *ngIf='journal.sjr_ranking != "" '>{{journal.sjr_ranking}}</h4>
             <h4 *ngIf='journal.sjr_ranking == "" '>N/A</h4>          

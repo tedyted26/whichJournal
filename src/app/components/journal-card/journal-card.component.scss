@@ -109,3 +109,11 @@ h4{
         font-size: 1rem;
     }
 }
+.border-predator-yes{
+    border: solid 3px rgb(220, 38, 38);
+    border-radius: 0.5rem;
+}
+.border-predator-mdpi{
+    border: solid 3px $lemon-lime;
+    border-radius: 0.5rem;
+}
