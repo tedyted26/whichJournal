@@ -46,6 +46,31 @@
     <span class="visually-hidden">Loading...</span>
   </div>
 </div>
+<!-- <div data-toggle="modal" data-target="#modalDialog" *ngIf="isLoading">
+  
+</div> -->
 <div class="text-center pb-5" *ngIf="!isLoading && search_data == null">Sorry! No results found</div>
 <div class="text-center pb-5" *ngIf="isError">Ups! Something went wrong.</div>
 <app-results *ngIf="search_data && !isLoading" [search_data]="search_data" [isJournals]="isJournals" [isConferences]="isConferences"></app-results>
+
+
+<!-- <div class="modal" id="modalDialog" *ngIf="isLoading">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">What are we doing here</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                  <span>&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <p>Content of the modal window</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Done</button>
+              <button type="button" class="btn btn-secondary" 
+                      data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div> -->
